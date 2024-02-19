@@ -6,7 +6,7 @@ const Footer = () => {
     
       <footer>
         <div class="footerall">
-            <img src="/creoshiftlogo.jpg" alt="Footer Logo"/>
+            <img src="public/creoshiftlogo.jpg" alt="Footer Logo"/>
         
         <div class="footer-links">
             <ul>
@@ -16,7 +16,7 @@ const Footer = () => {
             </ul>
         </div>
         <div class="social-icons">
-            <Link href="https://www.Facebook.com" class="Facebook-icon" img src="/facebooklogo.png"Link/>
+            <Link href="https://www.Facebook.com" class="Facebook-icon" img src="public/facebooklogo.png"Link/>
             < Link href="https://www.Whatsup.com" class="whats-up-icon" img src="/whatsuplogo.png"Link/>
             < link href="https://www.Instagram.com" class="Instagram-icon"img src="joseph/public/instagramlogo.jpg" Link/>
         </div>
