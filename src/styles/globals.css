@@ -1,33 +1,142 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: #333;
+  padding: 35px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+ }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.logo img {
+  height: 50px; 
+  width: 0 auto; 
+  padding: 0px
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.navList {
+  list-style-type: none;
+  display: flex; 
+}
+
+.navItem {
+  margin-right: 20px;
+}
+
+.navItem:last-child {
+  margin-right: 0px ;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+}
+
+
+main {
+  padding: 2rem;
+}
+
+#banner {
+  margin-top: 50px;
+  min-height: 100vh;
+  display: grid;
+  overflow-x: scroll;
+}
+
+.banner-item {
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner-item img {
+  width: 100%;
+  height: auto;
+  width: auto;
+}
+footer {
+  background-color: rgb(34, 33, 33);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+ 
+  
+}
+.footerall{
+  background-color: rgb(5, 5, 5);
+  color: white; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: auto;
+
+}
+
+.footer-logo {
+   
+  width: 50px;
+  padding: 20px;
+  align-items: center;
+}
+
+.footer-links ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 50px;
+  padding: auto;
+}
+
+.footer-links li {
+  margin-right: 30px;
+  padding: auto;}
+  
+ .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 20px; 
+    height: 20px;
+}
+@media screen and (max-width: 700px) {
+    
+  .navItem {
+      flex-direction:row;
+      align-items: flex-start;
   }
-}
+  
+  .navList{
+      margin-bottom: 15px;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .banner {
+      height: 300px;
   }
 }

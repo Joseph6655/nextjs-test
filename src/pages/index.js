@@ -1,21 +1,23 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Head from 'next/head'
+import Banner from '../../comps/Banner'
+import Footer from '../../comps/Footer'
+import Navbar from '../../comps/Navbar'
 
 export default function Home() {
   return (
-    <main
-      
-    >
-      <p>hellooo
-      
-      </p>
-      
      
+      <div>
+     
+       <Navbar/>
+       <Head>
+         <title> Home page</title>
+        
+       </Head>
 
-      
-
-    </main>
-  );
+     
+       <Banner/>
+       <Footer/>
+      </div>
+    
+  )
 }
