@@ -16,6 +16,7 @@ export default function Home() {
 
      
        <Banner/>
+       <div><p>hellooo </p></div>
        <Footer/>
       </div>
     
