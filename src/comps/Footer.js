@@ -6,7 +6,7 @@ const Footer = () => {
     
       <footer>
         <div class="footerall">
-            <img src="public/creoshiftlogo.jpg" alt="Footer Logo"/>
+            <img src="/creoshiftlogo.jpg" alt="Footer Logo"/>
         
         <div class="footer-links">
             <ul>
